@@ -648,7 +648,6 @@ def render_footer():
                     <h3>Quick Links</h3>
                     <p><a href="#home">Home</a></p>
                     <p><a href="#about">About Us</a></p>
-                    <p><a href="#support">Support Center</a></p>
                 </div>
                 <div class="footer-section">
                     <h3>Contact Us</h3>
@@ -789,7 +788,7 @@ def render_home_page():
         
         # Chat Interface
         st.markdown('<div class="chat-container">', unsafe_allow_html=True)
-        st.markdown('<h3 class="section-header">💬 Legal Consultation Chat</h3>', unsafe_allow_html=True)
+        st.markdown('<h3 class="section-header">Start a consultation based on your uploaded document</h3>', unsafe_allow_html=True)
         
         # Chat input
         query = st.text_input(
