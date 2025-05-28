@@ -1,0 +1,11 @@
+flask 
+flask-cors
+python-dotenv
+requests
+langchain
+faiss-cpu 
+sentence-transformers 
+pypdf 
+pdfplumber 
+transformers
+supabase
