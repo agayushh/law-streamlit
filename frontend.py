@@ -55,8 +55,6 @@ st.markdown("""
             border-bottom: 3px solid #d4af37;
             box-shadow: 0 4px 20px rgba(0,0,0,0.3);
             position: sticky;
-            top: 0;
-            z-index: 1000;
             
         }
 
@@ -65,15 +63,15 @@ st.markdown("""
             justify-content: space-between;
             align-items: center;
             max-width: 1200px;
-            margin: q00 ;
             flex-wrap: wrap;
+            
         }
         
         .logo-section {
             display: flex;
             align-items: center;
             gap: 1rem;
-            # margin-top: -90px;
+            margin-top: -17px;
         }
         
         .logo-text {
@@ -89,7 +87,6 @@ st.markdown("""
             font-size: 0.8rem;
             color: #b8c5d1;
             font-style: italic;
-            margin-top: -3px;
         }
         
         /* Navigation Menu */
@@ -97,7 +94,6 @@ st.markdown("""
             display: flex;
             gap: 2rem;
             align-items: center;
-            # margin-top: -90px;
         }
         
         .nav-item {
@@ -109,7 +105,6 @@ st.markdown("""
             border-radius: 20px;
             transition: all 0.3s ease;
             cursor: pointer;
-            # margin-top: -90px;
         }
         
         .nav-item:hover, .nav-item.active {
@@ -122,6 +117,8 @@ st.markdown("""
             display: flex;
             gap: 1rem;
             align-items: center;
+            width: 100%;
+            
         }
         
         .user-profile {
@@ -189,18 +186,20 @@ st.markdown("""
             color: #1a2332 !important;
             border: none !important;
             border-radius: 12px !important;
-            padding: 0 1rem !important;
+            padding: auto !important;
             font-weight: 600 !important;
             font-family: 'Inter', sans-serif !important;
             font-size: 1rem !important;
             height: 48px !important;
-            width: 140px !important;
+            width: 100% !important;
+            min-width: 140px !important;
             display: inline-flex !important;
             align-items: center !important;
             justify-content: center !important;
             transition: all 0.3s ease !important;
             box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3) !important;
             white-space: nowrap !important;
+            # margin-top: -75px;
         }
 
         /* Hover effect for all buttons */
@@ -210,21 +209,7 @@ st.markdown("""
         .stDownloadButton > button:hover {
             transform: translateY(-2px) !important;
             box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4) !important;
-        }
-
-        /* Main Content Container */
-        .main-container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-            min-height: 70vh;
-        }
-        
+        }        
         /* Hero Section */
         .hero-section {
             text-align: center;
@@ -233,6 +218,11 @@ st.markdown("""
             border-radius: 15px;
             margin-bottom: 3rem;
             border: 1px solid rgba(212, 175, 55, 0.2);
+            height: 55vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         
         .hero-title {
@@ -242,7 +232,7 @@ st.markdown("""
             color: #d4af37;
             margin-bottom: 1rem;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
+        }        
         .hero-subtitle {
             font-family: 'Inter', sans-serif;
             font-size: 1.3rem;
@@ -258,14 +248,23 @@ st.markdown("""
             border-radius: 10px !important;
             color: #ffffff !important;
             font-family: 'Inter', sans-serif !important;
-            padding: 0.8rem !important;
+            padding: 1.1rem !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
             transition: all 0.3s ease !important;
-            margin-bottom: 1.5rem !important; /* space below inputs */
+            margin-bottom: 1.5rem !important;
+            font-size: 1.1rem !important;
+            box-sizing: border-box !important;
+            
+            display: block !important!
+            line-height: normal !important;
         }
 
         .stTextInput > div > div > input:focus {
             border-color: #d4af37 !important;
             box-shadow: 0 0 20px rgba(212, 175, 55, 0.3) !important;
+            padding: 1.1rem !important;
         }
         
         .stFileUploader > div {
@@ -375,7 +374,12 @@ st.markdown("""
         .social-link {
             background: rgba(212, 175, 55, 0.1);
             padding: 0.8rem;
-            border-radius: 50%;
+            border-radius: 100%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             color: #d4af37;
             text-decoration: none;
             transition: all 0.3s ease;
